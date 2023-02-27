@@ -40,7 +40,7 @@ const passworRules = { required: true, message: "请输入密码！" };
 // }
 
 export default class MyRCFieldForm extends Component {
-  formRef = React.createRef();
+  formRef = React.createRef(); // xxx
   componentDidMount() {
     console.log("form", this.formRef.current); //sy-log
     this.formRef.current.setFieldsValue({ username: "default" });
